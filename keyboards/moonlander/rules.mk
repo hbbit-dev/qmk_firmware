@@ -15,9 +15,13 @@ CUSTOM_MATRIX = lite
 SWAP_HANDS_ENABLE = yes
 RGB_MATRIX_ENABLE = yes
 EEPROM_DRIVER = i2c
+TAP_DANCE_ENABLE = yes       #bh - enable tap dance
+RGB_MATRIX_CUSTOM_USER = yes # bh - enable custom matrix
 
 #project specific files
 SRC += matrix.c
 QUANTUM_LIB_SRC += i2c_master.c
+SRC += features/autocorrection.c #bh - enable autocorrection
+SRC += features/select_word.c    #bh - enable select word
 
 MOUSE_SHARED_EP = no
