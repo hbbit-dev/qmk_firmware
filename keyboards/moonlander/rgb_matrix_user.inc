@@ -16,7 +16,7 @@ static void star_light_set_color(int i, effect_params_t* params) {
 bool STAR_LIGHT(effect_params_t* params) {
     if (!params->init) {
         if (scale16by8(g_rgb_timer, qadd8(rgb_matrix_config.speed, 5)) % 5 == 0) {
-            star_light_set_color(rand() % DRIVER_LED_TOTAL, params);
+            star_light_set_color(rand() % RGB_MATRIX_LED_COUNT, params);
         }
         return false;
     }
@@ -50,7 +50,7 @@ static void dual_sat_star_light_set_color(int i, effect_params_t* params) {
 bool DUAL_SAT_STAR_LIGHT(effect_params_t* params) {
     if (!params->init) {
         if (scale16by8(g_rgb_timer, qadd8(rgb_matrix_config.speed, 5)) % 5 == 0) {
-            dual_sat_star_light_set_color(rand() % DRIVER_LED_TOTAL, params);
+            dual_sat_star_light_set_color(rand() % RGB_MATRIX_LED_COUNT, params);
         }
         return false;
     }
@@ -87,7 +87,7 @@ static void dual_hue_star_light_set_color(int i, effect_params_t* params) {
 bool DUAL_HUE_STAR_LIGHT(effect_params_t* params) {
     if (!params->init) {
         if (scale16by8(g_rgb_timer, qadd8(rgb_matrix_config.speed, 5)) % 5 == 0) {
-            dual_hue_star_light_set_color(rand() % DRIVER_LED_TOTAL, params);
+            dual_hue_star_light_set_color(rand() % RGB_MATRIX_LED_COUNT, params);
         }
         return false;
     }
