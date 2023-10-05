@@ -17,12 +17,12 @@ RGB_MATRIX_ENABLE = yes
 EEPROM_DRIVER = i2c
 TAP_DANCE_ENABLE = yes       # bactaholic - enable tap dance
 RGB_MATRIX_CUSTOM_USER = yes # bactaholic - enable custom matrix
-SEND_STRING = yes 			 #bactaholic - enable send string signature
+AUTOCORRECT_ENABLE = yes     # bactaholic - enable autocorrect
+OS_DETECTION_ENABLE = yes    # bactaholic - enable OS detection
 
 #project specific files
 SRC += matrix.c
 QUANTUM_LIB_SRC += i2c_master.c
-SRC += features/autocorrection.c #bactaholic - enable autocorrection
 SRC += features/select_word.c    #bactaholic - enable select word
 
-MOUSE_SHARED_EP = no
+MOUSE_SHARED_EP = no 
