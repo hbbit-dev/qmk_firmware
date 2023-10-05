@@ -16,7 +16,6 @@ SWAP_HANDS_ENABLE = yes
 RGB_MATRIX_ENABLE = yes
 EEPROM_DRIVER = i2c
 TAP_DANCE_ENABLE = yes       # bactaholic - enable tap dance
-RGB_MATRIX_CUSTOM_USER = yes # bactaholic - enable custom matrix
 AUTOCORRECT_ENABLE = yes     # bactaholic - enable autocorrect
 OS_DETECTION_ENABLE = yes    # bactaholic - enable OS detection
 

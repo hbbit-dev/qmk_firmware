@@ -126,9 +126,9 @@
 //#    define ENABLE_RGB_MATRIX_SOLID_SPLASH
 //#    define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-#define ENABLE_RGB_MATRIX_STAR_LIGHT           // bh - enable star light 01
-#define ENABLE_RGB_MATRIX_DUAL_SAT_STAR_LIGHT  // bh - enable star light 02
-#define ENABLE_RGB_MATRIX_DUAL_HUE_STAR_LIGHT  // bh - enable star light 03
+#      define ENABLE_RGB_MATRIX_STAR_LIGHT           // bh - enable star light
+#      define ENABLE_RGB_MATRIX_DUAL_SAT_STAR_LIGHT  // bh - enable star light dual saturation
+#      define ENABLE_RGB_MATRIX_DUAL_HUE_STAR_LIGHT  // bh - enable star light dual hue
 
 // #define RGB_MATRIX_LED_PROCESS_LIMIT 5
 // #define RGB_MATRIX_LED_FLUSH_LIMIT 26
