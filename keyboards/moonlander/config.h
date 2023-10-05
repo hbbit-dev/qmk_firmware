@@ -154,5 +154,3 @@
 #define AUDIO_PIN A5
 #define AUDIO_PIN_ALT A4
 #define AUDIO_PIN_ALT_AS_NEGATIVE
-
-#define SELECT_WORD_TIMEOUT 1500  // bh - select word idle

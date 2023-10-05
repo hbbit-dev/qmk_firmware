@@ -22,6 +22,5 @@ OS_DETECTION_ENABLE = yes    # bactaholic - enable OS detection
 #project specific files
 SRC += matrix.c
 QUANTUM_LIB_SRC += i2c_master.c
-SRC += features/select_word.c    #bactaholic - enable select word
 
 MOUSE_SHARED_EP = no 

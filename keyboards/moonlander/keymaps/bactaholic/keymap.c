@@ -35,11 +35,10 @@ enum {
     TD_SIGN, //bactaholic - KC_SIGN
     TD_PIPE, //bactaholic - add pipe, mostly for grep lol
     TD_QUIT, //bactaholic - double tap to alt+f4
-};
+    };
 
 enum custom_keycodes {
     EXAMPLE = SAFE_RANGE, //bactaholic - example custom keycode
-    SELWORD, //bactaholic - Add SELWORD to keymap
 };
 
 // clang-format off
@@ -64,8 +63,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [CTRL] = LAYOUT_moonlander(
         TD_ESC    ,  KC_F1  ,  KC_F2  ,  KC_F3  ,  KC_F4  ,  KC_F5  ,  KC_VOLU    ,         KC_PGUP ,  KC_F6  ,  KC_F7  ,  KC_F8  ,  KC_F9  ,  KC_F10 ,  KC_F11 ,
-        _______   ,  RGB_MOD,  _______,  _______,  _______,  AC_TOGG,  TG(SYMB)   ,         TG(CTRL),  _______,  _______,  _______,  _______,  _______,  _______,
-        _______   ,  RGB_HUI,  RGB_SAI,  RGB_VAI,  RGB_SPI,  _______,  TD(TD_SIGN),         KC_PGDN ,  _______,  _______,  _______,  _______,  _______,  _______,
+        _______   ,  RGB_MOD,  _______,  _______,  _______,  AC_TOGG,  TG(SYMB)   ,         TG(CTRL),  _______,  KC_UP  ,  _______,  _______,  _______,  _______,
+        _______   ,  RGB_HUI,  RGB_SAI,  RGB_VAI,  RGB_SPI,  _______,  TD(TD_SIGN),         KC_PGDN ,  KC_LEFT,  KC_DOWN,  KC_RGHT,  _______,  _______,  _______,
         _______   ,  RGB_HUD,  RGB_SAD,  RGB_VAD,  RGB_SPD,  _______,                                  _______,  _______,  _______,  _______,  _______,  _______,
         _______   ,  _______,  _______,  _______,  _______,  _______,                                  _______,  _______,  _______,  _______,  _______,  _______,
                                          _______,  _______,  _______,                                  _______, _______, _______
@@ -85,7 +84,8 @@ void send_quit(tap_dance_state_t *state, void *user_data)
 {
     if(state->count == 1) {
         SEND_STRING(SS_TAP(X_HOME)SS_DOWN(X_LSFT)SS_TAP(X_END)SS_UP(X_LSFT));
-    } else {
+    }
+    if(state->count == 2) {
         SEND_STRING(SS_DOWN(X_LALT)SS_TAP(X_F4)SS_UP(X_LALT));
     }
 }
