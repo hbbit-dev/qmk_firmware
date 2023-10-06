@@ -126,9 +126,10 @@
 //#    define ENABLE_RGB_MATRIX_SOLID_SPLASH
 //#    define ENABLE_RGB_MATRIX_SOLID_MULTISPLASH
 
-#      define ENABLE_RGB_MATRIX_STAR_LIGHT           // bh - enable star light
-#      define ENABLE_RGB_MATRIX_DUAL_SAT_STAR_LIGHT  // bh - enable star light dual saturation
-#      define ENABLE_RGB_MATRIX_DUAL_HUE_STAR_LIGHT  // bh - enable star light dual hue
+#      define ENABLE_RGB_MATRIX_STARLIGHT           // bactaholic - enable star light
+#      define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_SAT  // bactaholic - enable star light dual saturation
+#      define ENABLE_RGB_MATRIX_STARLIGHT_DUAL_HUE  // bactaholic - enable star light dual hue
+#      define ENABLE_RGB_MATRIX_STARLIGHT_SMOOTH    // bactaholic - enable starlight smooth
 
 // #define RGB_MATRIX_LED_PROCESS_LIMIT 5
 // #define RGB_MATRIX_LED_FLUSH_LIMIT 26
