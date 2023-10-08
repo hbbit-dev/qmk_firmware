@@ -33,7 +33,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     _______ , RGB_MOD  , _______  , _______  , _______  , KC_VOLU  ,           _______  , _______  , _______  , _______  , _______  , KC_F12 ,      
     _______ , RGB_HUI  , RGB_SAI  , RGB_VAI  , RGB_SPI  , KC_VOLD  ,           _______  , _______  , _______  , _______  , KC_UP    , _______,
     _______ , RGB_HUD  , RGB_SAD  , RGB_VAD  , RGB_SPD  , _______  ,           _______  , _______  , _______  , KC_LEFT  , KC_DOWN  , KC_RGHT,       
-                                               _______  , _______  ,   LT(LGHT,KC_ENT)  , _______
+                                               _______  ,LT(SYMB,KC_SPC),      _______  , _______
+  ),
+  [SYMB] = LAYOUT_voyager(
+    _______ , KC_F1    , KC_F2    , KC_F3    , KC_F4    , KC_F5    ,           KC_F6    , KC_F7    , KC_F8    , KC_F9    , KC_F10   , KC_F11 ,
+    _______ , _______  , KC_UP    , _______  , _______  , KC_VOLU  ,           KC_7     , KC_8     , KC_9     , _______  , _______  , KC_F12 ,      
+    _______ , KC_LEFT  , KC_DOWN  , KC_RGHT  , _______  , KC_VOLD  ,           KC_4     , KC_5     , KC_6     , _______  , KC_UP    , _______,
+    _______ , _______  , _______  , _______  , _______  , _______  ,           KC_1     , KC_2     , KC_3     , KC_LEFT  , KC_DOWN  , KC_RGHT,       
+                                               _______  , _______  ,           _______  , KC_0   
   ),
 };
 
